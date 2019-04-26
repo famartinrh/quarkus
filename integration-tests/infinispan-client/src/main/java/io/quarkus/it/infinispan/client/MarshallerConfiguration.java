@@ -40,6 +40,12 @@ public class MarshallerConfiguration {
                 "  required int32 publicationYear = 3; // no native Date type available in Protobuf\n" +
                 "\n" +
                 "  repeated Author authors = 4;\n" +
+                "\n" +
+                "  enum Type {\n" +
+                "    FANTASY = 0;\n" +
+                "    PROGRAMMING = 1;\n" +
+                "  }\n" +
+                "  required Type bookType = 5;\n" +
                 "}\n" +
                 "\n" +
                 "message Author {\n" +
